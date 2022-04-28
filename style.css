@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans&display=swap');
+
+body{
+    margin: 0px;
+    background-color: rgb(162, 212, 238);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: -50px;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 2px black;
+}
+
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    margin-bottom: -30px;
+}
+
+.blue{
+    grid-area: azul;
+    background-color: rgb(0, 132, 255);
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color: rgb(234, 60, 60);
+    border-top-right-radius: 100%;
+    cursor: pointer;
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: rgb(235, 235, 61);
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+}
+
+.green{
+    grid-area: verde;
+    background-color: rgb(61, 206, 61);
+    border-top-left-radius: 100%;
+    cursor: pointer;
+}
+
+.selected{
+    opacity: 0.7;
+}
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    color:#000000;
+    text-align: center;
+}
